@@ -1,0 +1,14 @@
+/* Theme Style */
+.vr-gap {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.vr-gap-t {
+    padding-top: 70px;
+}
+.vr-gap-b {
+    padding-bottom: 70px;
+}
+a:hover {
+    color: #006796;
+}
