@@ -9,6 +9,9 @@
 .vr-gap-b {
     padding-bottom: 70px;
 }
+a {
+    color: #333333;
+}
 a:hover {
     color: #006796;
 }
