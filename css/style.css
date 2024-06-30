@@ -1,4 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+    font-family: "Hind Madurai", sans-serif;
+    src: url('../font/Hind_Madurai/HindMadurai-Bold.ttf');
+    src: url('../font/Hind_Madurai/HindMadurai-Light.ttf');
+    src: url('../font/Hind_Madurai/HindMadurai-Medium.ttf');
+    src: url('../font/Hind_Madurai/HindMadurai-Regular.ttf');
+    src: url('../font/Hind_Madurai/HindMadurai-SemiBold.ttf');
+}
+/* Color 
+    color: #006796;
+    color: #F4D03F;
+*/
 /* Theme Style */
+a, h1, h2, h3, h4, h5, h6, span, p, .dropdown-item, .nav-link {
+    font-family: "Hind Madurai", sans-serif;
+}
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+a {
+    font-size: 16px;
+    color: #333333;
+}
+a:hover {
+    color: #006796;
+}
+a.btn {
+    padding: 8px 16px;
+    font-weight: 500;
+    border-radius: 0px;
+}
+.primary {
+    background-color: #006796;
+    color: #ffffff;
+    border: 1px solid #006796;
+}
+.primary:hover {
+    color: #006796;
+    background-color: transparent;
+    border: 1px solid #006796;
+}
+.secondary {
+    background-color: transparent;
+    color: #006796;
+    border: 1px solid #006796;
+}
+.secondary:hover {
+    background-color: #006796;
+    color: #ffffff;
+    border: 1px solid #006796;
+}
 .vr-gap {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -9,6 +61,72 @@
 .vr-gap-b {
     padding-bottom: 70px;
 }
-a:hover {
+
+
+/* Header Style */
+.navbar .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navbar .nav-link.primary {
+    color: #ffffff;
+}
+.navbar .nav-link.primary:hover {
     color: #006796;
 }
+.navbar  .dropdown-menu[data-bs-popper] {
+    top: 50px;
+}
+.navbar-nav .dropdown-menu {
+    border-radius: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.navbar-nav .dropdown-item {
+    padding: 7px 15px;
+    background-color: #006796;
+    color: #ffffff;
+}
+.navbar-nav .dropdown-item:hover {
+    background-color: #ffffff;
+    color: #006796;
+}
+.navbar-toggler {
+    border-radius: 0px;
+    border: 1px solid #006796;
+    padding: 0px 8px;
+}
+.navbar-toggler .bi-list::before {
+    color: #006796;
+    font-size: 40px;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Banner Style */
+.carousel-control-next, .carousel-control-prev {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 50px;
+    background-color: #006796;
+    border: 1px solid #006796;
+}
+.carousel-control-prev {
+    left: 50px;
+}
+.carousel-control-next {
+   right: 50px;
+}
+/* .carousel-control-next:hover, .carousel-control-prev:hover {
+    top: 50%;
+    bottom: 50%;
+    width: 56px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #006796;
+} */
