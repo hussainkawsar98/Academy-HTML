@@ -8,14 +8,14 @@ $(document).ready(function(){
         dots:false,
         margin: 10,
         responsive:{
-            900:{
-                items:4
+            0:{
+                items:1
             },
             600:{
                 items:3
             },
-            400:{
-                items:1
+            900:{
+                items:4
             }
         }
     });
@@ -26,6 +26,7 @@ $(document).ready(function(){
         loop:true,
         center:true,
         margin:15,
+        nav:true,
         autoplay:false,
         autoplayTimeout:3000,
         dots:false,
@@ -43,6 +44,7 @@ $(document).ready(function(){
     $('.inner-slider-carousel').owlCarousel({
         loop:true,
         autoplay:true,
+        nav:false,
         autoplayTimeout:10000,
         dots:false,
         responsive:{

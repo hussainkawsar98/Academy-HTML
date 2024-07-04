@@ -84,15 +84,34 @@ ul {
 .owl-carousel .owl-nav.disabled {
     display: block!important;
 }
-.owl-nav button {
-    background-color: red!important;
-    width: 30px;
-    height: 30px;
-    font-size: 70px!important;
-    color: green;
-    line-height: 70px;
+.owl-nav button span {
+    background-color: #ffffff;
+    width: 40px;
+    font-size: 40px;
+    height: 40px;
+    box-shadow: 0px 1px 5px #cccccc;
+    border-radius: 54px;
+    line-height: 40px;
+    display: inline-block;
+    color: #006796;
 }
-
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    background: 0 0;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+}
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    background: 0 0;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+}
+.inner-slider-carousel .owl-nav.disabled {
+    display: none!important;
+}
 
 /* Course Single Style */
 
@@ -168,6 +187,27 @@ ul {
 }
 .category-single h4 {
    
+}
+
+/* Footer Style */
+.footer-body h4 {
+    color: #f1f1f1
+}
+.footer-body p {
+    color: #f1f1f1;
+    font-size: 16px;
+}
+.footer-body .social-link i {
+    content: "\f586";
+    font-size: 20px;
+    padding: 0 5px;
+}
+.footer-bottom {
+    border-top: 1px solid #333333;
+}
+.footer-bottom p, a {
+    color: #f1f1f1;
+    margin: 0;
 }
 
 
@@ -268,6 +308,7 @@ ul {
 #testimonial .testimonial-single li:first-child{
     margin-right: 10px;
 }
-#testimonial .testimonial-single li > p{
+#testimonial .testimonial-single li > p {
     margin: 0px;
+    font-size: 16px;
 }
