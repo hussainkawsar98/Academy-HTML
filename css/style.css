@@ -1,25 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-/* @font-face {
-    font-family: "Hind Madurai", sans-serif;
-    src: url('../font/Hind_Madurai/HindMadurai-Bold.ttf');
-    src: url('../font/Hind_Madurai/HindMadurai-Light.ttf');
-    src: url('../font/Hind_Madurai/HindMadurai-Medium.ttf');
-    src: url('../font/Hind_Madurai/HindMadurai-Regular.ttf');
-    src: url('../font/Hind_Madurai/HindMadurai-SemiBold.ttf');
-} */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
 /* Color 
     color: #006796;
     color: #F4D03F;
 */
 /* Theme Style */
 body {
-    /* font-family: "Inter", sans-serif; */
-    font-family: "Hind Madurai", sans-serif;
-    font-family: "Poppins", sans-serif;
-    font-family: "Oxygen", sans-serif;
-    font-family: "Hind Madurai","Oxygen","Poppins",sans-serif;
+    font-family: "Noto Sans Display", sans-serif;
 }
 a, h1, h2, h3, h4, h5, h6, span, p, .dropdown-item, .nav-link {
     margin: 0;
@@ -80,12 +65,13 @@ ul {
     padding-bottom: 60px;
 }
 .title {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
     font-weight: 600;
+    color: #333333;
 }
 .bg-light {
-    background-color: #f7f9fa!important;
+    background-color: #f1f1f1!important;
 }
 .d-flex {
     display: flex!important;
@@ -104,7 +90,7 @@ ul {
     height: 40px;
     box-shadow: 0px 1px 5px #cccccc;
     border-radius: 54px;
-    line-height: 40px;
+    line-height: 32px;
     display: inline-block;
     color: #006796;
 }
@@ -246,6 +232,9 @@ ul {
 }
 
 /* Footer Style */
+#footer {
+    background-color: #303133;
+}
 .footer-body h4 {
     color: #f1f1f1
 }
