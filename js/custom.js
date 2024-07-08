@@ -28,7 +28,7 @@ $(document).ready(function(){
         margin:15,
         nav:true,
         autoplay:false,
-        autoplayTimeout:3000,
+        autoplayTimeout:5000,
         dots:false,
         responsive:{
             900:{
@@ -59,7 +59,27 @@ $(document).ready(function(){
         items:2,
         loop:true,
         autoplay:true,
-        autoplayTimeout:3000,
+        autoplayTimeout:10000,
+        dots:false,
+        responsive:{
+            900:{
+                items:3
+            },
+            600:{
+                items:2
+            },
+            400:{
+                items:1
+            }
+        }
+    });
+
+    // Testimonial Carousel
+    $('.blog-carousel').owlCarousel({
+        items:2,
+        loop:false,
+        autoplay:true,
+        autoplayTimeout:5000,
         dots:false,
         responsive:{
             900:{

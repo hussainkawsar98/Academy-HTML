@@ -1,13 +1,12 @@
-Changes
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@font-face {
+/* @font-face {
     font-family: "Hind Madurai", sans-serif;
     src: url('../font/Hind_Madurai/HindMadurai-Bold.ttf');
     src: url('../font/Hind_Madurai/HindMadurai-Light.ttf');
     src: url('../font/Hind_Madurai/HindMadurai-Medium.ttf');
     src: url('../font/Hind_Madurai/HindMadurai-Regular.ttf');
     src: url('../font/Hind_Madurai/HindMadurai-SemiBold.ttf');
-}
+} */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 /* Color 
@@ -18,6 +17,9 @@ Changes
 body {
     /* font-family: "Inter", sans-serif; */
     font-family: "Hind Madurai", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-family: "Oxygen", sans-serif;
+    font-family: "Hind Madurai","Oxygen","Poppins",sans-serif;
 }
 a, h1, h2, h3, h4, h5, h6, span, p, .dropdown-item, .nav-link {
     margin: 0;
@@ -25,6 +27,11 @@ a, h1, h2, h3, h4, h5, h6, span, p, .dropdown-item, .nav-link {
 p {
     font-size: 17px;
     margin-bottom: 10px;
+}
+h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
 }
 a {
     font-size: 16px;
@@ -37,7 +44,7 @@ a:hover {
 a.btn {
     padding: 8px 16px;
     font-weight: 500;
-    border-radius: 0px;
+    border-radius: 2px;
 }
 ul {
     padding: 0px;
@@ -79,6 +86,11 @@ ul {
 }
 .bg-light {
     background-color: #f7f9fa!important;
+}
+.d-flex {
+    display: flex!important;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Owl Carousel */
@@ -152,7 +164,6 @@ ul {
 .course-single a.buy {
     padding: 3px 8px;
     font-weight: 500;
-    border-radius: 0px;
     background-color: #006796;
     color: #ffffff;
     border: 1px solid #006796;
@@ -174,19 +185,64 @@ ul {
     padding: 5px;
     box-shadow: 0 0 10px #dddddd;
 }
-
 .category-single h4 {
-    font-size: 18px;
+    font-size: 17px;
+    color: #333333;
     font-weight: 500;
 }
 .owl-item.active.center > .category-single {
     transform: scale(1.1);
 }
-.category-single {
-    
+
+/* Testimonial Style */
+.testimonial-single {
+    border-radius: 5px;
+    padding: 25px;
+    background-color: #ffffff;
+    margin: 10px;
+    box-shadow: 0 0 10px #dddddd;
 }
-.category-single h4 {
-   
+.testimonial-single img {
+    border-radius: 100px;
+}
+.testimonial-single ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+#testimonial .testimonial-single li:first-child{
+    margin-right: 10px;
+}
+#testimonial .testimonial-single li > p {
+    margin: 0px;
+    font-size: 16px;
+}
+
+/* Blog Single Style */
+.blog-single {
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #ffffff;
+    margin: 10px;
+    box-shadow: 0 0 10px #dddddd;
+}
+.blog-single img {
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.blog-single h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+}
+.blog-single:hover h4 {
+    color: #006796;
+}
+.blog-single p {
+    color: #333333;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
 }
 
 /* Footer Style */
@@ -196,17 +252,13 @@ ul {
 .footer-body p {
     color: #f1f1f1;
     font-size: 16px;
+    margin: 0;
 }
 .footer-body .social-link i {
-    content: "\f586";
     font-size: 20px;
     padding: 0 5px;
 }
-.footer-single > a {
-    position: relative;
-    padding-right: 15px;
-}
-.footer-single > a::before {
+/* .footer-single > a::before {
     border-radius: 5px;
     position: absolute;
     content: '';
@@ -216,17 +268,25 @@ ul {
     top: 9px;
     right: 4px;
 }
-.footer-single > a::before a:last-child {
-    background-color:transparent;
-    position: absolute;
-}
+.footer-single > a::before:last-child {
+    background-color:red;
+} */
 .footer-body .social-link img {
-    width: 24px;
-    filter: grayscale(1);
+    width: 22px;
+    filter: grayscale(0);
     margin: 5px 2px;
 }
 .footer-body .social-link img:hover {
-    filter: grayscale(0);
+    filter: grayscale(1);
+}
+.footer-single li > a {
+    transition: all linear 0.5s;
+    color: #f1f1f1;
+    line-height: 25px;
+}
+.footer-single li > a:hover{
+    padding-left: 10px;
+    color: #f4d03f;
 }
 .footer-bottom {
     border-top: 1px solid #333333;
@@ -235,7 +295,6 @@ ul {
     color: #f1f1f1;
     margin: 0;
 }
-
 
 
 /* Header Style */
@@ -286,10 +345,14 @@ ul {
 .carousel-control-next, .carousel-control-prev {
     top: 50%;
     transform: translateY(-50%);
-    width: 56px;
+    width: 50px;
+    border-radius: 50px;
     height: 50px;
     background-color: #006796;
     border: 1px solid #006796;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    height: 1.5rem;
 }
 .carousel-control-prev {
     left: 50px;
@@ -313,28 +376,4 @@ ul {
 /* Inner Slider Style */
 #inner-slider img {
     border-radius: 5px;
-}
-
-
-/* Testimonial Style */
-.testimonial-single {
-    border-radius: 5px;
-    padding: 25px;
-    background-color: #ffffff;
-    margin: 10px;
-    box-shadow: 0 0 10px #dddddd;
-}
-.testimonial-single img {
-    border-radius: 100px;
-}
-.testimonial-single ul {
-    list-style-type: none;
-    margin-bottom: 10px;
-}
-#testimonial .testimonial-single li:first-child{
-    margin-right: 10px;
-}
-#testimonial .testimonial-single li > p {
-    margin: 0px;
-    font-size: 16px;
 }
