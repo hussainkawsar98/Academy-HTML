@@ -127,7 +127,7 @@ ul {
     line-height: 20px;
 }
 .course-single a > img {
-    border-radius: 5px;
+    border-radius: 2px;
 }
 .course-single .d-flex {
     justify-content: space-between;
@@ -170,6 +170,10 @@ ul {
     transition: all linear 0.3s;
     padding: 5px;
     box-shadow: 0 0 10px #dddddd;
+    background-color: #ffffff;
+}
+.category-single img{
+    border-radius: 2px;
 }
 .category-single h4 {
     font-size: 17px;
@@ -212,7 +216,7 @@ ul {
     box-shadow: 0 0 10px #dddddd;
 }
 .blog-single img {
-    border-radius: 5px;
+    border-radius: 2px;
     display: inline-block;
     margin-bottom: 10px;
 }
