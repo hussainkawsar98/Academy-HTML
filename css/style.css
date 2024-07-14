@@ -433,3 +433,9 @@ About Page Style
     line-height: 55px;
     font-size: 40px;
 }
+.about-cont-single {
+    padding: 20px 15px;
+}
+.about-cont-single h3 {
+    font-size: 2.75rem;
+}
