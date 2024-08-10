@@ -40,6 +40,9 @@ a.btn {
 ul {
     padding: 0px;
 }
+li {
+    list-style: none;
+}
 .primary {
     background-color: #006796;
     color: #ffffff;
@@ -574,4 +577,75 @@ About Page Style
 }
 #courses .filter li {
     display: inline-block;
+}
+
+/* Office Change */
+.course-banner {
+    background: rgb(1,103,151);
+    background: linear-gradient(180deg, rgba(1,103,151,1) 0%, rgba(0,32,47,1) 100%);
+    color: #f1f1f1;
+}
+.course-preview {
+    margin-top: -220px;
+    background-color: #ffffff;
+    border: 1px solid #f1f1f1;
+}
+
+.course-short-des h3 {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+.course-content-grid h3 {
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.course-content-grid ul {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 6px 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.course-content-grid ul li {
+    position: relative;
+    padding-left: 15px;
+}
+.course-content-grid ul li::before {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    content: '';
+    transform: rotate(45deg);
+    top: 11px;
+    background-color: #333333;
+    left: 0px;
+}
+.course-content-grid .mentor {
+    justify-content: flex-start;
+    display: flex;
+    column-gap: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 6px 0px;
+    align-items: center;
+}
+.course-content-grid .mentor img{
+    border-radius: 50px;
+    width: 80px;
+}
+.course-preview del {
+    font-size: 20px;
+    color: #535353;
+}
+.course-preview li {
+    font-size: 15px;
+    color: #535353;
+    font-weight: 600;
+    line-height:30px;
+}
+.course-preview li i {
+    padding-right: 5px;
+}
+.course-preview  .btn {
+    padding: 6px 16px;
 }
