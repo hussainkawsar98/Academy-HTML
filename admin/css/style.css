@@ -14,3 +14,9 @@ input.form-group.btn.btn-primary {
 .fas.fa-trash {
   color: #ef3232;
 }
+.course-details a {
+  color: #555555;
+}
+.course-details p {
+  color: #777777;
+}

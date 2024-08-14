@@ -831,81 +831,126 @@
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper mt-4">
-    <!-- Main content -->
-    <section class="content">
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-3">
-
-            <!-- Profile Image -->
-            <div class="card card-primary card-outline course-details">
-              <div class="card-body">
-                <div class="text-center">
-                  <img class="img-fluid rounded" src="../dist/img/photo1.png" alt="User profile picture">
-                </div>
-                <h3 class="mt-2"><a href="#">Nina Mcintire</a></h3>
-                <p class="mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla pariatur placeat debitis totam enim accusantium dolor maiores esse quasi corrupti, animi fugit, dignissimos quos sed neque praesentium? At, sapiente fugit.</p>
-                <p class="font-weight-bold mb-0">Video: 45 Videos</p>  
-                <p class="font-weight-bold mb-0">Mentor: Muktar Hussain</p>  
-                <p class="font-weight-bold mb-0">Price: 451</p>              
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Student</h1>
           </div>
-          <div class="col-md-9">
-            <div class="card">
-              <div class="card-body p-0">
-                <table class="table table-striped projects">
-                    <thead>
-                        <tr>
-                          <th>Students Name</th>
-                          <th>Phone</th>
-                          <th>Course Fee</th>
-                          <th class="text-center">Erollment Date</th>
-                          <th class="text-center">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                          <td>Muktar Hussain</td>
-                          <td>0123456789</td>
-                          <td>5214</td>
-                          <td>25 July 2024</td>
-                          <td><span class="badge badge-danger">Inactive</span></td>
-                        </tr>
-                        <tr>
-                          <td>Muktar Hussain</td>
-                          <td>0123456789</td>
-                          <td>5214</td>
-                          <td>25 July 2024</td>
-                          <td><span class="badge badge-danger">Inactive</span></td>
-                        </tr>
-                        <tr>
-                          <td>Muktar Hussain</td>
-                          <td>0123456789</td>
-                          <td>5214</td>
-                          <td>25 July 2024</td>
-                          <td><span class="badge badge-danger">Inactive</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <ul class="pagination float-right mt-3">
-                  <li class="page-item"><a class="page-link" href="#">«</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">»</a></li>
-                </ul>
-              </div>
-            </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Student</li>
+            </ol>
           </div>
         </div>
-      </div>
+      </div><!-- /.container-fluid -->
     </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      <!-- Default box -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Students</h3>
+
+          <div class="card-tools">
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default">
+              Create Student
+            </button>
+            <div class="modal fade" id="modal-default">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Create New Course</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="" method="POST">
+                      <div class="row mb-3">
+                        <div class="form-group col-12">
+                          <label>Course</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-12">
+                          <label>Category Select</label>
+                          <select class="custom-select">
+                            <option>option 1</option>
+                            <option>option 2</option>
+                            <option>option 3</option>
+                            <option>option 4</option>
+                            <option>option 5</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-12">
+                          <label>Mentor</label>
+                          <select class="custom-select">
+                            <option>option 1</option>
+                            <option>option 2</option> 
+                          </select>
+                        </div>
+                        <div class="form-group col-12">
+                          <p>Size: 400px x 300px;</p>
+                          <input class="w-100" name="profile" type="file"><br>
+                        </div>
+                        <input type="submit" value="Save Course" class="form-group btn btn-primary">
+                    </form>
+                  </div>
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+          </div>
+        </div>
+        <div class="card-body p-0">
+          <table class="table table-striped projects">
+              <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Course Items</th>
+                    <th class="text-center">Created Date</th>
+                    <th>Action</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td>LA2024</td>
+                    <td><a href="view.html">Muktar Hussain</a></td>
+                    <td>018058974</td>
+                    <td>01</td>
+                    <td class="project-actions text-right">Created 01.01.2019</td>
+                    <td>
+                      <a href="edit.html"><i class="fas fa-pencil-alt px-2"></i></a>
+                      <a href="#"><i class="fas fa-trash"></i></a>
+                    </td>
+                  </tr>
+              </tbody>
+          </table>
+          <ul class="pagination float-right mt-3">
+            <li class="page-item"><a class="page-link" href="#">«</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">»</a></li>
+          </ul>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
   </div>
+  <!-- /.content-wrapper -->
 
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">

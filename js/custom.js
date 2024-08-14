@@ -93,25 +93,5 @@ $(document).ready(function(){
             }
         }
     });
-
-    // Team Carousel
-    $('.team-carousel').owlCarousel({
-        items:2,
-        loop:true,
-        autoplay:true,
-        autoplayTimeout:5000,
-        dots:false,
-        responsive:{
-            900:{
-                items:4
-            },
-            600:{
-                items:3
-            },
-            400:{
-                items:1
-            }
-        }
-    });
  
 });

@@ -831,7 +831,25 @@
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper mt-4">
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Students</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Student</a></li>
+              <li class="breadcrumb-item active">Muktar Hussain</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
@@ -839,73 +857,149 @@
           <div class="col-md-3">
 
             <!-- Profile Image -->
-            <div class="card card-primary card-outline course-details">
-              <div class="card-body">
+            <div class="card card-primary card-outline">
+              <div class="card-body box-profile">
                 <div class="text-center">
-                  <img class="img-fluid rounded" src="../dist/img/photo1.png" alt="User profile picture">
+                  <img class="profile-user-img img-fluid img-circle" src="../dist/img/user4-128x128.jpg" width="100px" alt="User profile picture">
                 </div>
-                <h3 class="mt-2"><a href="#">Nina Mcintire</a></h3>
-                <p class="mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla pariatur placeat debitis totam enim accusantium dolor maiores esse quasi corrupti, animi fugit, dignissimos quos sed neque praesentium? At, sapiente fugit.</p>
-                <p class="font-weight-bold mb-0">Video: 45 Videos</p>  
-                <p class="font-weight-bold mb-0">Mentor: Muktar Hussain</p>  
-                <p class="font-weight-bold mb-0">Price: 451</p>              
+
+                <h3 class="profile-username text-center">Nina Mcintire</h3>
+                <p class="text-muted text-center">Phone: 012456.398<br>example@gmail.com
+                </p>
+                <ul class="list-group list-group-unbordered mb-3">
+                  <li class="list-group-item">
+                    <b>Total Course</b> <a class="float-right">22</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Total Pay</b> <a class="float-right">543</a>
+                  </li>
+                </ul>
+
+                <a href="index.html" class="btn btn-primary btn-block"><b>Back to Students</b></a>
               </div>
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
 
           </div>
+          <!-- /.col -->
           <div class="col-md-9">
             <div class="card">
-              <div class="card-body p-0">
-                <table class="table table-striped projects">
-                    <thead>
-                        <tr>
-                          <th>Students Name</th>
-                          <th>Phone</th>
-                          <th>Course Fee</th>
-                          <th class="text-center">Erollment Date</th>
-                          <th class="text-center">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                          <td>Muktar Hussain</td>
-                          <td>0123456789</td>
-                          <td>5214</td>
-                          <td>25 July 2024</td>
-                          <td><span class="badge badge-danger">Inactive</span></td>
-                        </tr>
-                        <tr>
-                          <td>Muktar Hussain</td>
-                          <td>0123456789</td>
-                          <td>5214</td>
-                          <td>25 July 2024</td>
-                          <td><span class="badge badge-danger">Inactive</span></td>
-                        </tr>
-                        <tr>
-                          <td>Muktar Hussain</td>
-                          <td>0123456789</td>
-                          <td>5214</td>
-                          <td>25 July 2024</td>
-                          <td><span class="badge badge-danger">Inactive</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <ul class="pagination float-right mt-3">
-                  <li class="page-item"><a class="page-link" href="#">«</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">»</a></li>
+              <div class="card-header p-2">
+                <ul class="nav nav-pills">
+                  <li class="nav-item"><a class="nav-link active" href="#courses" data-toggle="tab">Courses</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Settings</a></li>
                 </ul>
-              </div>
+              </div><!-- /.card-header -->
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="active tab-pane" id="courses">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="info-box">
+                          <span class="info-box-icon w-25"><img src="../dist/img/photo1.png" class="rounded" alt=""></span>
+                          <div class="info-box-content w-75">
+                            <h4 class="">Web Design For freelancing</h4>
+                            <b>Videos: 40</b>
+                            <b>Total Students: 60</b>
+                          </div>
+                          <!-- /.info-box-content -->
+                        </div>
+                        <!-- /.info-box -->
+                        <div class="info-box">
+                          <span class="info-box-icon w-25"><img src="../dist/img/photo1.png" class="rounded" alt=""></span>
+                          <div class="info-box-content w-75">
+                            <h4 class="">Web Design For freelancing</h4>
+                            <b>Videos: 40</b>
+                            <b>Total Students: 60</b>
+                          </div>
+                          <!-- /.info-box-content -->
+                        </div>
+                        <!-- /.info-box -->
+                        <div class="info-box">
+                          <span class="info-box-icon w-25"><img src="../dist/img/photo1.png" class="rounded" alt=""></span>
+                          <div class="info-box-content w-75">
+                            <h4 class="">Web Design For freelancing</h4>
+                            <b>Videos: 40</b>
+                            <b>Total Students: 60</b>
+                          </div>
+                          <!-- /.info-box-content -->
+                        </div>
+                        <!-- /.info-box --> <div class="info-box">
+                          <span class="info-box-icon w-25"><img src="../dist/img/photo1.png" class="rounded" alt=""></span>
+                          <div class="info-box-content w-75">
+                            <h4 class="">Web Design For freelancing</h4>
+                            <b>Videos: 40</b>
+                            <b>Total Students: 60</b>
+                          </div>
+                          <!-- /.info-box-content -->
+                        </div>
+                        <!-- /.info-box -->
+                        <ul class="pagination float-right mt-3">
+                          <li class="page-item"><a class="page-link" href="#">«</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">»</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.col -->
+                    </div>
+                  </div>
+
+                  <div class="tab-pane" id="settings">
+                    <form class="form-horizontal">
+                      <div class="form-group row">
+                        <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputName" placeholder="Name">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputName" class="col-sm-2 col-form-label">Phone</label>
+                        <div class="col-sm-10">
+                          <input type="number" class="form-control" id="inputName" placeholder="Phone">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="Email" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Address</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail" placeholder="Address">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="offset-sm-2 col-sm-10">
+                          <input type="file">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="offset-sm-2 col-sm-10">
+                          <button type="submit" class="btn btn-primary">Update</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- /.tab-pane -->
+                </div>
+                <!-- /.tab-content -->
+              </div><!-- /.card-body -->
             </div>
+            <!-- /.card -->
           </div>
+          <!-- /.col -->
         </div>
-      </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
     </section>
+    <!-- /.content -->
   </div>
+  <!-- /.content-wrapper -->
 
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
