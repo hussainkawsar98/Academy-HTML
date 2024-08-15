@@ -858,14 +858,14 @@
           <h3 class="card-title">Students</h3>
 
           <div class="card-tools">
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default">
-              Create Student
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-default">
+              Admission
             </button>
             <div class="modal fade" id="modal-default">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h4 class="modal-title">Create New Course</h4>
+                    <h4 class="modal-title">Student Admission</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -874,31 +874,54 @@
                     <form action="" method="POST">
                       <div class="row mb-3">
                         <div class="form-group col-12">
-                          <label>Course</label>
+                          <label>Name</label>
                           <input type="text" class="form-control">
                         </div>
-                        <div class="form-group col-12">
-                          <label>Category Select</label>
-                          <select class="custom-select">
-                            <option>option 1</option>
-                            <option>option 2</option>
-                            <option>option 3</option>
-                            <option>option 4</option>
-                            <option>option 5</option>
+                        <div class="form-group col-6">
+                          <label>Phone</label>
+                          <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group col-6">
+                          <label>Email</label>
+                          <input type="email" class="form-control">
+                        </div>
+                        <div class="form-group col-6">
+                          <label>Course</label>
+                          <select class="form-control" name="" id="">
+                            <option value="">Web Design</option>
+                            <option value="">Graphics Design</option>
+                            <option value="">App</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-6">
+                          <label>Course Fee</label>
+                          <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group col-6">
+                          <label>District</label>
+                          <select class="form-control" name="" id="">
+                            <option value="">Dristrict</option>
+                            <option value="">Dristrict</option>
+                            <option value="">Dristrict</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-6">
+                          <label>Thana</label>
+                          <select class="form-control" name="" id="">
+                            <option value="">Thana</option>
+                            <option value="">Thana</option>
+                            <option value="">Dristrict</option>
                           </select>
                         </div>
                         <div class="form-group col-12">
-                          <label>Mentor</label>
-                          <select class="custom-select">
-                            <option>option 1</option>
-                            <option>option 2</option> 
-                          </select>
+                          <label>Address</label>
+                          <input type="text" class="form-control">
                         </div>
                         <div class="form-group col-12">
                           <p>Size: 400px x 300px;</p>
                           <input class="w-100" name="profile" type="file"><br>
                         </div>
-                        <input type="submit" value="Save Course" class="form-group btn btn-primary">
+                        <input type="submit" value="Admission Confirm" class="form-group btn btn-primary">
                     </form>
                   </div>
                 </div>
